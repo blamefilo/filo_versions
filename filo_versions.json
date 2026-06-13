@@ -33,7 +33,8 @@
     "version": "version: 1.0.0"
   },
   "filo_repairkit": {
-    "version": "version: 1.0.0"
+    "version": "version: 1.0.1",
+    "message": "Test message\nSecond line\nThird line"
   },
   "filo_reversehorn": {
     "version": "version: 1.0.0"
