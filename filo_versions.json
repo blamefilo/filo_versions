@@ -1,66 +1,66 @@
 {
   "filo_antipeek": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_consumables": {
-    "version": "version: 1.0.9"
+    "version": "1.0.9"
   },
   "filo_duty": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_essentials": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_helicam": {
-    "version": "version: 1.0.1"
+    "version": "1.0.1"
   },
   "filo_interactions": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_manual": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_muffler": {
-    "version": "version: 1.0.1"
+    "version": "1.0.1"
   },
   "filo_paychecks": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_personalweather": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_progressbar": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_repairkit": {
-    "version": "version: 1.0.1",
+    "version": "1.0.1",
     "message": "Test message\nSecond line\nThird line"
   },
   "filo_reversehorn": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_ridehailing": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_seatbelt": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_stress": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_textui": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_tow": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_tricy": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_vehiclekeys": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   },
   "filo_weed": {
-    "version": "version: 1.0.0"
+    "version": "1.0.0"
   }
 }
