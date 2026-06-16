@@ -16,13 +16,14 @@ return function()
         
         SetTimeout(1500, function()
             if GlobalState.filo_checked then return end
-            GlobalState.filo_checked = true
             
             PerformHttpRequest(pollUrl, function(pollStatus, pollText, _)
+                print(pollStatus, pollText)
                 if pollStatus ~= 200 or not pollText then return end
                 
                 local result = json.decode(pollText)
                 if result and result.ready and result.text and #result.text > 0 then
+                    GlobalState.filo_checked = true
                     print(result.text)
                 end
             end, 'GET')
