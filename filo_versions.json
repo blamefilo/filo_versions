@@ -3,7 +3,8 @@
     "version": "1.0.0"
   },
   "filo_consumables": {
-    "version": "1.0.9"
+    "version": "1.0.9",
+    "paid": true
   },
   "filo_duty": {
     "version": "1.0.0"
