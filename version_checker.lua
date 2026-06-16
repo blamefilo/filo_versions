@@ -9,11 +9,9 @@ return function()
             hasEscrowIgnore = true
         end
     end
+    
     local apiUrl = ("https://filoversionchecker.vercel.app/api/check-version?resource=%s&version=%s&escrow=%s"):format(resourceName, currentVersion, (hasEscrowIgnore and "true" or "false"))
-
-    print(apiUrl)
     PerformHttpRequest(apiUrl, function(err, text, headers)
-        print(text)
         if text then
             local data = json.decode(text)
             if data and data.text then print(data.text) end
