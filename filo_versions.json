@@ -62,5 +62,8 @@
   },
   "filo_weed": {
     "version": "1.0.0"
+  },
+  "filo_blips": {
+    "version": "1.0.0"
   }
 }
