@@ -23,6 +23,9 @@ return function()
         :format(queued.resultKey)
         
         SetTimeout(1500, function()
+            if GlobalState.filo_checked then return end
+            GlobalState.filo_checked = true
+            
             PerformHttpRequest(pollUrl, function(pollStatus, pollText, _)
                 if pollStatus ~= 200 or not pollText then return end
                 
