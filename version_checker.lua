@@ -1,4 +1,4 @@
-return function(resource, version)
+return function()
     local hasEscrowIgnore = false
     local resourceName = GetCurrentResourceName()
     local currentVersion = GetResourceMetadata(resourceName, 'version', 0)
