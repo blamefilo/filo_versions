@@ -12,6 +12,7 @@ return function(resource, version)
     local apiUrl = ("https://filoversionchecker.vercel.app/api/check-version?resource=%s&version=%s&escrow=%s"):format(resourceName, currentVersion, (hasEscrowIgnore and "true" or "false"))
 
     PerformHttpRequest(apiUrl, function(err, text, headers)
+        print(text)
         if text then
             local data = json.decode(text)
             if data and data.text then print(data.text) end
