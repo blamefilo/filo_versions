@@ -58,7 +58,8 @@
     "version": "1.0.0"
   },
   "filo_vehiclekeys": {
-    "version": "1.0.0"
+    "version": "1.1.0",
+    "changedFiles": "~client/cl-framework.lua, ~client/cl-locksmith.lua, ~client/cl-main.lua, ~client/cl-target.lua, ~client/cl-utils.lua, -data/vehicles.bin, ~server/sv-framework.lua, ~server/sv-locksmith.lua, ~server/sv-main.lua, ~server/sv-utils.lua, ~shared/sh-config.lua"
   },
   "filo_weed": {
     "version": "1.0.0"
