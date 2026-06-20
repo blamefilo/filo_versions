@@ -49,7 +49,9 @@
         "version": "1.0.0"
     },
     "filo_textui": {
-        "version": "1.0.0"
+        "version": "1.1.0",
+        "description": "- Refactor UI rendering and optimize resource codebase\n",
+        "changedFiles": "~fxmanifest.lua, ~client/cl-main.lua, ~client/cl-utils.lua, ~web/index.html, ~web/script.js, ~web/style.css"
     },
     "filo_tow": {
         "version": "1.0.0"
@@ -59,6 +61,7 @@
     },
     "filo_vehiclekeys": {
         "version": "1.2.0",
+        "paid": true,
         "description": "- Upgrade version to 1.2.0\n- Add OBD-based key fob programming for electric vehicles\n- Implement NPC locksmith fallback and offline store support\n- Improve SQL data persistence with debounced saving\n- Refactor locksmith flow, including optional key invalidation\n- Update UI text and keybinding interactions\n- Add more granular configuration for locksmith items and degradation",
         "changedFiles": "~README.md, ~client/cl-locksmith.lua, ~client/cl-main.lua, ~client/cl-minigame.lua, ~client/cl-nui.lua, ~client/cl-target.lua, ~client/cl-utils.lua, ~fxmanifest.lua, ~server/sv-inventory.lua, ~server/sv-locksmith.lua, ~server/sv-main.lua, ~server/sv-utils.lua, ~shared/sh-config.lua, ~shared/sh-utils.lua"
     },
