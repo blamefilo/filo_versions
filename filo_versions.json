@@ -2,6 +2,9 @@
     "filo_antipeek": {
         "version": "1.0.0"
     },
+    "filo_bolt": {
+        "version": "1.0.0"
+    },
     "filo_consumables": {
         "version": "1.0.9",
         "paid": true
@@ -60,10 +63,10 @@
         "version": "1.0.0"
     },
     "filo_vehiclekeys": {
-        "version": "1.3.0",
+        "version": "1.3.1",
         "paid": true,
-        "description": "- Upgrade version to 1.3.0\n- Add fixing for hotwired vehicles\n- Add minigames for key cutting and OBD cloning\n- Introduce statebags for hotwiring and key system management\n- Update export naming to `filo_vehiclekey`\n- Add configurable default keybinds\n- Implement key cutting and cloning UI components",
-        "changedFiles": "~client/cl-compatibility.lua, ~client/cl-locksmith.lua, ~client/cl-main.lua, ~client/cl-minigame.lua, ~client/cl-nui.lua, ~client/cl-utils.lua, ~fxmanifest.lua, ~server/classes/vehicles.lua, ~server/sv-compatibility.lua, ~server/sv-main.lua, ~server/sv-version.lua, ~shared/sh-config.lua, ~shared/sh-utils.lua"
+        "description": "- Upgrade version to 1.3.1\n- Introduces an optional feature where holding the ignition keybind will toggle the engine state. Added corresponding configuration and UI updates to support this functionality.",
+        "changedFiles": "~client/cl-main.lua, ~client/cl-utils.lua, ~server/sv-inventory.lua, ~shared/sh-config.lua"
     },
     "filo_weed": {
         "version": "1.0.0"
