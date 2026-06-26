@@ -3,8 +3,8 @@
         "version": "1.0.0"
     },
     "filo_bolt": {
-        "version": "1.0.1",
-        "description": "- Refactored version checking logic\n- Added missing version check"
+        "version": "1.0.2",
+        "description": "- Remove unused WHEEL_SIDE constant and return value\n- Bump version to 1.0.2\n- Disable debug mode in config"
     },
     "filo_consumables": {
         "version": "1.0.9",
