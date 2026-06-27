@@ -6,6 +6,10 @@
         "version": "1.0.2",
         "description": "- Remove unused WHEEL_SIDE constant and return value\n- Bump version to 1.0.2\n- Disable debug mode in config"
     },
+    "filo_jack": {
+        "version": "1.0.0",
+        "description": "- Attach floor jacks to the left or right side of any vehicle\n- Pump-by-pump lift\n- Geometric roll calculation based on real wheel track width\n- Automatic Z lift to prevent opposite-side wheel clipping\n- Both sides can be jacked simultaneously\n- Removing one jack while the other is active correctly resets the vehicle to the remaining jack's state\n- `IsLifted` export for other resources to check jack state"
+    },
     "filo_consumables": {
         "version": "1.0.9",
         "paid": true
