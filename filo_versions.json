@@ -68,10 +68,10 @@
         "version": "1.0.0"
     },
     "filo_vehiclekeys": {
-        "version": "1.3.2",
+        "version": "1.3.21",
         "paid": true,
-        "description": "- Bump version to 1.3.2 and optimize SQL query\n- Removed unnecessary index hint in player_vehicles query for better\n  compatibility.",
-        "changedFiles": "~server/sv-framework.lua"
+        "description": "- Fixed a bug where lock states were not being updated correctly",
+        "changedFiles": "~server/sv-main.lua, ~server/classes/vehicles.lua, ~client/cl-main.lua"
     },
     "filo_weed": {
         "version": "1.0.0"
