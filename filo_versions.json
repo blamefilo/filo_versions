@@ -58,6 +58,7 @@
     },
     "filo_textui": {
         "version": "1.1.0",
+        "paid": true,
         "description": "- Refactor UI rendering and optimize resource codebase\n",
         "changedFiles": "~fxmanifest.lua, ~client/cl-main.lua, ~client/cl-utils.lua, ~web/index.html, ~web/script.js, ~web/style.css"
     },
@@ -68,10 +69,10 @@
         "version": "1.0.0"
     },
     "filo_vehiclekeys": {
-        "version": "1.3.21",
+        "version": "1.3.3",
         "paid": true,
-        "description": "- Fixed a bug where lock states were not being updated correctly",
-        "changedFiles": "~server/sv-main.lua, ~server/classes/vehicles.lua, ~client/cl-main.lua"
+        "description": "- Updated to version 1.3.3\n- Refactored various client and server scripts\n- Added new server classes",
+        "changedFiles": "~client/cl-functions.lua, ~client/cl-inventory.lua, ~client/cl-locksmith.lua, ~client/cl-main.lua, ~client/cl-utils.lua, ~fxmanifest.lua, ~server/classes/vehicles.lua, ~server/sv-framework.lua, ~server/sv-inventory.lua, ~server/sv-locksmith.lua, ~server/sv-main.lua"
     },
     "filo_weed": {
         "version": "1.0.0"
