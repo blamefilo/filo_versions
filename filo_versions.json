@@ -84,21 +84,15 @@
         "version": "1.0.0"
     },
     "filo_vehiclekeys": {
-        "version": "1.3.3",
+        "version": "1.3.31",
         "paid": true,
-        "description": "- Simplify key handling and ignition state management\n- Optimize UI updates and condition checking\n- Improve code structure and maintainability across client/server\n- Version updated to 1.3.3",
+        "description": "- Update locksmith interaction and version check logic",
         "changedFiles": [
-            "~client/cl-functions.lua",
-            "~client/cl-inventory.lua",
             "~client/cl-locksmith.lua",
-            "~client/cl-main.lua",
-            "~client/cl-utils.lua",
+            "~client/cl-compatiblity.lua",
             "~fxmanifest.lua",
-            "~server/classes/vehicles.lua",
-            "~server/sv-framework.lua",
-            "~server/sv-inventory.lua",
-            "~server/sv-locksmith.lua",
-            "~server/sv-main.lua"
+            "~server/sv-main.lua",
+            "~server/sv-version.lua"
         ]
     },
     "filo_weed": {
