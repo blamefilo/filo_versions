@@ -114,5 +114,9 @@
         "version": "1.0.1",
         "paid": true,
         "description": "- Updated animation"
+    },
+    "filo_budroll": {
+        "version": "1.0.0",
+        "paid": true,
     }
 }
