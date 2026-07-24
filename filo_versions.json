@@ -83,10 +83,9 @@
         "version": "1.0.0"
     },
     "filo_vehiclekeys": {
-        "version": "1.3.33",
+        "version": "1.3.4",
         "paid": true,
-        "description": "- Fix vehicle key netId synchronization",
-        "changedFiles": ["~server/sv-main.lua"]
+        "description": "Fix vehicle key sync and add ignition toggle locks \n- Prevent race conditions in ignition toggles using a lock tabl \n- Fix UI error for vehicles missing key ID \n- Correct `GetVehiclePlate` argument in lockpick even \n- Update manifest syntax and version.",
     },
     "filo_weed": {
         "version": "1.0.0"
