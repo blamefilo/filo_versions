@@ -38,7 +38,8 @@
         "version": "1.0.0"
     },
     "filo_muffler": {
-        "version": "1.0.1"
+        "version": "1.1.0",
+        "description": "- Refactor vehicle state management and update version checker"
     },
     "filo_paychecks": {
         "version": "1.0.0"
