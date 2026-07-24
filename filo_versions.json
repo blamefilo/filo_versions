@@ -65,13 +65,12 @@
         "version": "1.0.0"
     },
     "filo_textui": {
-        "version": "1.1.0",
+        "version": "1.2.0",
         "paid": true,
-        "description": "- Refactor UI rendering and optimize resource codebase\n",
+        "description": "- Fix non-escrowed files list",
         "changedFiles": [
             "~fxmanifest.lua",
             "~client/cl-main.lua",
-            "~client/cl-utils.lua",
             "~web/index.html",
             "~web/script.js",
             "~web/style.css"
