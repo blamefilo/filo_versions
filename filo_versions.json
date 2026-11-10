@@ -201,14 +201,13 @@
         "version": "1.0.0"
     },
     "filo_ui": {
-        "version": "2.1.0",
-        "description": "- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look (`Config.AccentColour` / `Config.BackgroundColour`)\n- Remove the moving light rays behind the quick menu",
+        "version": "2.1.1",
+        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
         "paid": true,
         "changedFiles": [
-            "~config.lua",
+            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
             "~fxmanifest.lua",
-            "~server/main.lua",
-            "~web/ (7 files)"
+            "~web/quick-menu.css"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
