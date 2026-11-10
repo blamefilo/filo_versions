@@ -1,13 +1,14 @@
 {
     "filo_ambulance": {
-        "version": "1.1.1",
-        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
+        "version": "1.2.0",
+        "description": "- Add a mouse gizmo to the hospital creator for peds, beds and vehicle spawns: drag the arrows to move, the ring to turn, click to drop the point, hold right mouse to look around. Arrow keys and Page Up / Down nudge, scroll turns, Shift gives fine steps, G brings it to you\n- Change **Add bed** to keep placing beds and their get-up points until you press Enter. Each bed is still its own entry, and Backspace takes back the last point\n- Change adding AI medic path points and stashes to keep placing until Enter",
         "paid": true,
         "changedFiles": [
-            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+modules/creator/gizmo.lua",
             "~fxmanifest.lua",
-            "~web/creator.css",
-            "~web/deathscreen.css"
+            "~locales/ (entire folder)",
+            "~modules/creator/client.lua",
+            "~web/creator.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
