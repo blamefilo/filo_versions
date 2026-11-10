@@ -213,18 +213,22 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_vehiclekeys": {
-        "version": "2.4.0",
-        "description": "- Rework the key fob back into a real-looking remote with a chrome rim: lock, unlock, trunk or roof and alarm buttons with a blinking LED, and a swipeable touchscreen with auto-lock and auto-start on electric vehicles\n- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look",
+        "version": "2.4.1",
+        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
         "paid": true,
         "changedFiles": [
-            "+web/dist/assets/index-Bp8uB0dy.js",
-            "+web/dist/assets/index-DvAV4aps.css",
-            "+web/src/components/Keyfob.css",
+            "+web/dist/assets/index-CHrZ7PxE.js",
+            "+web/dist/assets/index-D-Vsyjp_.css",
+            "+web/dist/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+web/public/fonts/BarlowSemiCondensed-Bold.ttf",
             "~fxmanifest.lua",
-            "~web/ (8 files)",
-            "-web/dist/assets/index-BOiV3kip.css",
-            "-web/dist/assets/index-BsBJ7w4w.js",
-            "-web/src/components/Keyfob.module.css"
+            "~web/dist/index.html",
+            "~web/src/components/Admin.module.css",
+            "~web/src/components/KeyCutting.module.css",
+            "~web/src/components/OBDClone.module.css",
+            "~web/src/index.css",
+            "-web/dist/assets/index-Bp8uB0dy.js",
+            "-web/dist/assets/index-DvAV4aps.css"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
