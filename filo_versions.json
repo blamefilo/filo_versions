@@ -124,13 +124,17 @@
         "version": "1.0.0"
     },
     "filo_police": {
-        "version": "1.1.1",
-        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
+        "version": "1.2.0",
+        "description": "- Add a mouse gizmo to the police and jail creators for peds and vehicle spawns: drag the arrows to move, the ring to turn, click to drop the point, hold right mouse to look around. Arrow keys and Page Up / Down nudge, scroll turns, Shift gives fine steps, G brings it to you\n- Change **Add** in the jail creator to keep placing cells, spawns and job spots until you press Enter. Each point is still its own entry, and Backspace takes back the last one",
         "paid": true,
         "changedFiles": [
-            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+client/gizmo.lua",
+            "~client/controlprompts.lua",
+            "~client/creator.lua",
+            "~client/jailcreator.lua",
             "~fxmanifest.lua",
-            "~web/style.css"
+            "~locales/en.json",
+            "~web/app.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
