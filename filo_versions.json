@@ -56,6 +56,15 @@
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
+    "filo_discordgate": {
+        "version": "1.0.1",
+        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
+        "changedFiles": [
+            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
+            "~fxmanifest.lua",
+            "~web/style.css"
+        ]
+    },
     "filo_duty": {
         "version": "1.0.0",
         "changedFiles": [
