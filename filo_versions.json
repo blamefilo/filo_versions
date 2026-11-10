@@ -45,6 +45,16 @@
     "filo_essentials": {
         "version": "1.0.0"
     },
+    "filo_fastfood": {
+        "version": "2.1.0",
+        "description": "- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look",
+        "changedFiles": [
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~shared/brand.lua",
+            "~web/style.css"
+        ]
+    },
     "filo_helicam": {
         "version": "1.0.1"
     },
