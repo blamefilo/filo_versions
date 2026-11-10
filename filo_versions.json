@@ -139,6 +139,22 @@
     "filo_reversehorn": {
         "version": "1.0.0"
     },
+    "filo_rewards": {
+        "version": "1.1.0",
+        "description": "- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look\n- Change the default server name to `FILO SCRIPTS`",
+        "paid": true,
+        "changedFiles": [
+            "+web/dist/assets/index-C-09c8I1.js",
+            "+web/dist/assets/index-C03IT-nx.css",
+            "~fxmanifest.lua",
+            "~shared/brand.lua",
+            "~shared/config.lua",
+            "~web/ (9 files)",
+            "-web/dist/assets/index-Bgdgvc-Z.js",
+            "-web/dist/assets/index-CVv_eoLR.css"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_ridehailing": {
         "version": "1.0.0"
     },
