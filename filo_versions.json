@@ -90,13 +90,12 @@
         "version": "1.0.0"
     },
     "filo_fastfood": {
-        "version": "2.1.0",
-        "description": "- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look",
+        "version": "2.2.0",
+        "description": "- Add **Move with gizmo** to every spawn, path, counter and line point\n- Change **Record points** to **Place points**: move a see-through copy of yourself with a mouse gizmo and press E to drop each point, Enter when done\n- Change seat placement to the mouse gizmo while you sit in the seat: drag the arrows to move, the ring to turn, click to drop it, hold right mouse to look around",
         "changedFiles": [
-            "~config.lua",
-            "~fxmanifest.lua",
-            "~shared/brand.lua",
-            "~web/style.css"
+            "+client/gizmo.lua",
+            "~client/creator.lua",
+            "~fxmanifest.lua"
         ]
     },
     "filo_helicam": {
