@@ -205,9 +205,20 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_vehiclekeys": {
-        "version": "1.3.63",
+        "version": "2.4.0",
+        "description": "- Rework the key fob back into a real-looking remote with a chrome rim: lock, unlock, trunk or roof and alarm buttons with a blinking LED, and a swipeable touchscreen with auto-lock and auto-start on electric vehicles\n- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look",
         "paid": true,
-        "description": "- Resolve vehicle entity handling issues in ignition keybind.\n- Ensure vehicle source is assigned during creation.\n- Add entity validation in server-side utility."
+        "changedFiles": [
+            "+web/dist/assets/index-Bp8uB0dy.js",
+            "+web/dist/assets/index-DvAV4aps.css",
+            "+web/src/components/Keyfob.css",
+            "~fxmanifest.lua",
+            "~web/ (8 files)",
+            "-web/dist/assets/index-BOiV3kip.css",
+            "-web/dist/assets/index-BsBJ7w4w.js",
+            "-web/src/components/Keyfob.module.css"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_weed": {
         "version": "1.0.0"
