@@ -1,24 +1,13 @@
 {
     "filo_ambulance": {
-        "version": "1.1.0",
-        "description": "- Add EMS **Set recovery** on a patient: they limp for the minutes the medic picks, even after their wounds are treated. **End recovery** or `/heal` stops it early. Configure it in `Config.recovery`\n- Add the `getRecoveryTime` client export\n- Add four painkillers to the pharmacy and `Config.painRelief`: `acetaminophen`, `naproxen`, `lidocaine` and `ketorolac`\n- Add `theme` to `Config.branding`: `'chrome'` (default) for the liquid chrome look, `'colour'` for your own accent and background\n- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look\n- Change the default server name to `FILO SCRIPTS`\n- Change the German, French, Greek, Italian, Portuguese and Swedish translations to cover the new options",
+        "version": "1.1.1",
+        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
         "paid": true,
         "changedFiles": [
-            "+modules/recovery/server.lua",
-            "~!INSTALLATION/2_items/ox_inventory/items.lua",
-            "~!INSTALLATION/2_items/qb-core/items.lua",
-            "~config.lua",
-            "~data/hospitals.lua",
-            "~data/pillbox.lua",
+            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
             "~fxmanifest.lua",
-            "~locales/ (entire folder)",
-            "~modules/commands/server.lua",
-            "~modules/death/client.lua",
-            "~modules/job/client/main.lua",
-            "~modules/wounds/client.lua",
-            "~shared/brand.lua",
-            "~web/ (6 files)",
-            "-web/logo.png"
+            "~web/creator.css",
+            "~web/deathscreen.css"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
