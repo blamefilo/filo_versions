@@ -112,6 +112,24 @@
     "filo_personalweather": {
         "version": "1.0.0"
     },
+    "filo_police": {
+        "version": "1.1.0",
+        "description": "- Add `theme` to `Config.branding`: `'chrome'` (default) for the liquid chrome look, `'colour'` for your own accent and background\n- Rework the UI in the Filo liquid chrome look: graphite surfaces, silver chrome buttons and highlights, upright sentence-case text, no glows, gradients or scanlines\n- Change the default `accent` and `background` to the liquid chrome colours (`#D9DBE0` / `#141415`). Set your own colours in the branding config to keep your look\n- Change jailing someone who is already serving: the second booking is refused. Use **Set time** to change a sentence\n- Change the server console to log who set a prisoner's time and who released them early\n- Change the jail task marker and the mugshot Discord embed to the new accent colour",
+        "paid": true,
+        "changedFiles": [
+            "~client/jail.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~INSTALL.md",
+            "~server/inmates.lua",
+            "~server/mugshot.lua",
+            "~shared/brand.lua",
+            "~web/app.js",
+            "~web/index.html",
+            "~web/style.css"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_progressbar": {
         "version": "1.0.0"
     },
