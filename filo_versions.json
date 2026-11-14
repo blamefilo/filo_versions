@@ -106,9 +106,17 @@
         "version": "1.0.0"
     },
     "filo_jack": {
-        "version": "1.0.2",
+        "version": "1.2.0",
+        "description": "- Remove the `community_bridge` dependency: a built-in bridge now detects Qbox, QBCore or ESX. You can remove `community_bridge` from your server if nothing else uses it",
         "paid": true,
-        "description": "- Update wheel indices and increment version to 1.0.2"
+        "changedFiles": [
+            "+bridge/core/client.lua",
+            "+bridge/core/server.lua",
+            "+bridge/core/shared.lua",
+            "~fxmanifest.lua",
+            "~shared/sh-init.lua"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_manual": {
         "version": "1.0.0"
