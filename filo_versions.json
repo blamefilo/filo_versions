@@ -179,9 +179,9 @@
         "version": "1.0.0"
     },
     "filo_slashtire": {
-        "version": "1.0.1",
+        "version": "1.1.0",
         "paid": true,
-        "description": "- Updated animation"
+        "description": "- Add qb-target support\n- Add translatable labels under `locales/`\n- Change slashing to be checked by the server (distance and held weapon)\n- Fix only the last slashed tire syncing to players who join later or drive up to the vehicle\n- Fix players getting stuck in place while turning towards the tire\n- Fix players staying marked as busy if the slash was interrupted"
     },
     "filo_stealwheels": {
         "version": "1.2.0",
