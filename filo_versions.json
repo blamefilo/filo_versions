@@ -15,6 +15,18 @@
     "filo_antipeek": {
         "version": "1.0.0"
     },
+    "filo_appearance": {
+        "version": "1.1.0",
+        "description": "- Add client exports `getWornClothing` and `takeOffClothing(group)` so radial menus and other scripts can take clothing pieces off, with the same animation and inventory handling as `/takeoff`\n- Add `setr filo_appearance:textui` and `setr filo_appearance:textui_position` convars to pick the text UI from `server.cfg` without editing `config.lua`\n- Move the variant arrows onto the selected style tile; they only show when that style has more than one variant",
+        "changedFiles": [
+            "~client/bridge/textui.lua",
+            "~client/items.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~web/app.js",
+            "~web/style.css"
+        ]
+    },
     "filo_blips": {
         "version": "1.0.2",
         "changedFiles": [
