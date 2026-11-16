@@ -1,11 +1,11 @@
 {
     "filo_ambulance": {
-        "version": "1.4.1",
-        "description": "- Update bundled filo_joblib to 1.1.0 (QBCore and ESX support, carries and escorts end when a player logs out)",
+        "version": "1.5.0",
+        "description": "- Add `esx_addonaccount` as a society provider, so fees and shop purchases go into `society_<job>` on ESX. `provider = 'auto'` picks it when no other banking resource runs\n- Fix wheelchairs not working on QBCore and ESX: picking one up checks for room in the inventory and pushing checks job and duty through the framework bridge",
         "paid": true,
         "changedFiles": [
-            "+server/sv-version.lua",
-            "~fxmanifest.lua"
+            "~fxmanifest.lua",
+            "~modules/ (6 files)"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
