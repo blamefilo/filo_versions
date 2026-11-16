@@ -139,6 +139,23 @@
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
+    "filo_joblib": {
+        "version": "1.1.0",
+        "description": "- Add QBCore and ESX support next to Qbox. The framework is picked automatically, and the framework code is in the editable `bridge/` folder\n- Fix carries and escorts staying attached when either player logs out to the character menu or the other player disappears",
+        "changedFiles": [
+            "+bridge/client.lua",
+            "+bridge/server.lua",
+            "+server/sv-version.lua",
+            "~client/interactions.lua",
+            "~client/utils.lua",
+            "~fxmanifest.lua",
+            "~server/cuffs.lua",
+            "~server/gps.lua",
+            "~server/interactions.lua",
+            "~server/tracking.lua",
+            "~server/utils.lua"
+        ]
+    },
     "filo_manual": {
         "version": "1.0.0"
     },
