@@ -35,8 +35,18 @@
         ]
     },
     "filo_bolt": {
-        "version": "1.0.3",
-        "description": "- Fix player collision and movement during camera use"
+        "version": "1.0.4",
+        "description": "- Fix `canCancel = false` being ignored, so the minigame could always be cancelled\n- Fix bolts spawning on the inner side of right-hand wheels\n- Fix the player staying frozen and invisible if the resource stops mid-minigame\n- Fix the minigame not ending when the vehicle is deleted or moves away, or the player dies\n- Fix the `Start` export returning `nil` instead of `false` when it can't start\n- Fix the ratchet sound cutting off and reloading on every bolt",
+        "paid": true,
+        "changedFiles": [
+            "~client/cl-bolt.lua",
+            "~client/cl-camera.lua",
+            "~client/cl-init.lua",
+            "~client/cl-main.lua",
+            "~client/cl-sound.lua",
+            "~fxmanifest.lua"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_budroll": {
         "version": "1.0.0",
