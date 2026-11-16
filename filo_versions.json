@@ -174,6 +174,18 @@
     "filo_progressbar": {
         "version": "1.0.0"
     },
+    "filo_radio": {
+        "version": "1.1.0",
+        "description": "- Add a `Handheld at mouth` talk animation\n- Add per-animation prop placement: `prop` in `Config.Animations` can be a table with `offset`, `rotation` and `bone`\n- Rework the radio look into a realistic duty handheld with an amber backlit screen, speaker grille and rubber keys\n- Change the radio's top plate to show `Config.Branding.name`\n- Change the transmit-off sound to a cleaner double beep\n- Remove the `Handheld (VS Radio)` animation",
+        "changedFiles": [
+            "~client/main.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~web/app.js",
+            "~web/index.html",
+            "~web/style.css"
+        ]
+    },
     "filo_repairkit": {
         "version": "1.0.0"
     },
