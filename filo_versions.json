@@ -141,16 +141,20 @@
         "version": "1.0.0"
     },
     "filo_police": {
-        "version": "1.2.0",
-        "description": "- Add a mouse gizmo to the police and jail creators for peds and vehicle spawns: drag the arrows to move, the ring to turn, click to drop the point, hold right mouse to look around. Arrow keys and Page Up / Down nudge, scroll turns, Shift gives fine steps, G brings it to you\n- Change **Add** in the jail creator to keep placing cells, spawns and job spots until you press Enter. Each point is still its own entry, and Backspace takes back the last one",
+        "version": "1.3.0",
+        "description": "- Add a **Fine** option on players for on-duty police: pick charges by category, see the total and issue it. The money comes out of the player's bank into the department's society account. Charges and default amounts are in `data/fines.lua`\n- Add `fineGrade`, `fineMax` and `fines` to `Config.departmentDefaults`, also editable per department in the creator's Departments tab (lowest grade, most one fine can add up to, amount per charge)\n- Add **R** while placing peds and vehicle spawns in the police and jail creators to switch between the mouse gizmo and aiming with the camera. The choice is kept until the resource restarts\n- Change the default wheel clamp `left` / `right` offsets and rotations so the clamp sits on the wheel\n- Fix cuffs and rope staying on when someone is jailed, released, or starts or finishes community service",
         "paid": true,
         "changedFiles": [
-            "+client/gizmo.lua",
-            "~client/controlprompts.lua",
+            "+data/fines.lua",
             "~client/creator.lua",
+            "~client/gizmo.lua",
+            "~client/interactions.lua",
             "~client/jailcreator.lua",
+            "~config.lua",
             "~fxmanifest.lua",
             "~locales/en.json",
+            "~server/inmates.lua",
+            "~server/settings.lua",
             "~web/app.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
