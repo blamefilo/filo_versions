@@ -170,21 +170,17 @@
         "version": "1.0.0"
     },
     "filo_police": {
-        "version": "1.3.0",
-        "description": "- Add a **Fine** option on players for on-duty police: pick charges by category, see the total and issue it. The money comes out of the player's bank into the department's society account. Charges and default amounts are in `data/fines.lua`\n- Add `fineGrade`, `fineMax` and `fines` to `Config.departmentDefaults`, also editable per department in the creator's Departments tab (lowest grade, most one fine can add up to, amount per charge)\n- Add **R** while placing peds and vehicle spawns in the police and jail creators to switch between the mouse gizmo and aiming with the camera. The choice is kept until the resource restarts\n- Change the default wheel clamp `left` / `right` offsets and rotations so the clamp sits on the wheel\n- Fix cuffs and rope staying on when someone is jailed, released, or starts or finishes community service",
+        "version": "1.4.0",
+        "description": "- Add QBCore and ESX support next to Qbox. The framework is picked automatically, and the framework code is in the editable `bridge/` folder\n- Change the unpaid clamp list to read `owned_vehicles` on ESX\n- Change the bundled filo_joblib to 1.1.0",
         "paid": true,
         "changedFiles": [
-            "+data/fines.lua",
-            "~client/creator.lua",
-            "~client/gizmo.lua",
-            "~client/interactions.lua",
-            "~client/jailcreator.lua",
-            "~config.lua",
+            "+bridge/client.lua",
+            "+bridge/server.lua",
+            "+server/sv-version.lua",
+            "~client/ (6 files)",
             "~fxmanifest.lua",
-            "~locales/en.json",
-            "~server/inmates.lua",
-            "~server/settings.lua",
-            "~web/app.js"
+            "~server/ (13 files)",
+            "~shared/departments.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
