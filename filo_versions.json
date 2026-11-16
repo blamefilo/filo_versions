@@ -1,14 +1,11 @@
 {
     "filo_ambulance": {
-        "version": "1.2.0",
-        "description": "- Add a mouse gizmo to the hospital creator for peds, beds and vehicle spawns: drag the arrows to move, the ring to turn, click to drop the point, hold right mouse to look around. Arrow keys and Page Up / Down nudge, scroll turns, Shift gives fine steps, G brings it to you\n- Change **Add bed** to keep placing beds and their get-up points until you press Enter. Each bed is still its own entry, and Backspace takes back the last point\n- Change adding AI medic path points and stashes to keep placing until Enter",
+        "version": "1.3.0",
+        "description": "- Add client exports `checkInjuries`, `revivePatient` and `givePainRelief` (take the patient's ped) so radial menus and other scripts can run the EMS actions",
         "paid": true,
         "changedFiles": [
-            "+modules/creator/gizmo.lua",
             "~fxmanifest.lua",
-            "~locales/ (entire folder)",
-            "~modules/creator/client.lua",
-            "~web/creator.js"
+            "~modules/job/client/main.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
