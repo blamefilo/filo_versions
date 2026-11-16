@@ -1,11 +1,13 @@
 {
     "filo_ambulance": {
-        "version": "1.3.0",
-        "description": "- Add client exports `checkInjuries`, `revivePatient` and `givePainRelief` (take the patient's ped) so radial menus and other scripts can run the EMS actions",
+        "version": "1.4.0",
+        "description": "- Add **R** while placing peds, beds and vehicle spawns in the hospital creator to switch between the mouse gizmo and aiming with the camera. The choice is kept until the resource restarts",
         "paid": true,
         "changedFiles": [
             "~fxmanifest.lua",
-            "~modules/job/client/main.lua"
+            "~locales/ (entire folder)",
+            "~modules/creator/client.lua",
+            "~modules/creator/gizmo.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
