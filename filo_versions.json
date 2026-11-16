@@ -1,13 +1,11 @@
 {
     "filo_ambulance": {
-        "version": "1.4.0",
-        "description": "- Add **R** while placing peds, beds and vehicle spawns in the hospital creator to switch between the mouse gizmo and aiming with the camera. The choice is kept until the resource restarts",
+        "version": "1.4.1",
+        "description": "- Update bundled filo_joblib to 1.1.0 (QBCore and ESX support, carries and escorts end when a player logs out)",
         "paid": true,
         "changedFiles": [
-            "~fxmanifest.lua",
-            "~locales/ (entire folder)",
-            "~modules/creator/client.lua",
-            "~modules/creator/gizmo.lua"
+            "+server/sv-version.lua",
+            "~fxmanifest.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
