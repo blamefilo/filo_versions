@@ -118,6 +118,26 @@
             "~fxmanifest.lua"
         ]
     },
+    "filo_firefighter": {
+        "version": "1.1.0",
+        "description": "- Add random flame sizes and types, so no two flames look the same\n- Add smaller tongues of fire and a smoke column around every flame\n- Add a map blip for every active fire for all on-duty firefighters (also ones who clock in after it started), a small blip on each burning flame nearby and an arrow over each flame (`Config.fire.blip`, `Config.fire.markers`)\n- Add an aiming pose for the hose nozzle (`Config.hose.aimAnim`)\n- Change the hose line to look much thicker (`Config.hose.ropeStrands`, `Config.hose.ropeWidth`)\n- Change fires to start with twice as many flames (`Config.fire.startFlamesPerIntensity`) and grow to more (`Config.fire.maxFlamesPerIntensity` is now 5)\n- Change flame size and variety to be set in `Config.particles` (`size`, `cluster`, `always`, `flameSmoke`)\n- Fix flames placed around a location's centre floating or sitting underground on uneven ground\n- Fix new flames stacking on top of each other\n- Fix the truck cannon still spraying with an empty tank, or for players who aren't on-duty firefighters\n- Fix fire trucks that didn't come from a garage having no water",
+        "paid": true,
+        "changedFiles": [
+            "+!INSTALLATION/images/foam_concentrate.png",
+            "+!INSTALLATION/images/scba.png",
+            "~!INSTALLATION/ox_inventory/items.lua",
+            "~client/cannon.lua",
+            "~client/fires.lua",
+            "~client/hose.lua",
+            "~client/ropes.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~locales/en.json",
+            "~server/fires.lua",
+            "~server/water.lua"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_helicam": {
         "version": "1.0.1"
     },
