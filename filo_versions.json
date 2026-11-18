@@ -286,26 +286,17 @@
         "version": "1.0.0"
     },
     "filo_ui": {
-        "version": "2.2.0",
-        "description": "- Add a HUD editor (`/edithud`, `Config.HudEditor`): players drag the minimap, status bar, speedometer, player info, notifications and chat anywhere, saved per player\n- Add eye toggles in the HUD editor for each status (health, armor, food, water, stress, stamina, oxygen) and each player info field: auto, always visible or always hidden\n- Add HUD styles for the status bar and speedometer (`classic`, `line`, `arc`, `glass`, `slant`, `minimal`, `tiles`), picked per player in the editor; set the defaults with `Config.Hud.statusStyle` / `Config.Hud.speedoStyle`\n- Add a player info panel with server ID, job and grade, cash, bank and black money (`Config.PlayerInfo`), with money rolling to its new value\n- Add a charge bolt instead of the fuel pump in electric vehicles; list add-on EVs in `Config.Hud.electricModels`\n- Add the `GetHudLayout` client export\n- Add a clock and arrow-key grid navigation to the quick menu\n- Add optional `lib.notify` support: ox_lib notifications can show in the `filo_ui` style (see the install guide)\n- Change notifications to get a soft shade behind the text so they read over bright scenes, and to sit beside the player info\n- Change the quick menu to fade out when closing\n- Fix the screen blur flickering when going from the quick menu to the map or settings\n- Fix left/right not moving between categories on the settings page tabs",
+        "version": "2.3.0",
+        "description": "- Rework the quick menu into a pause menu layout: player and server header, a player card, large Map and Resume tiles, Settings and Keybinds tiles, and key hints with Tebex and Disconnect at the bottom\n- Change quick menu arrow keys to move to the nearest tile in that direction\n- Change the default HUD editor command to `/hud` (`Config.HudEditor.command`)\n- Fix status icons sitting off-centre in the `arc`, `slant` and other non-classic HUD styles\n- Fix the food and health icons being drawn slightly off-centre",
         "paid": true,
         "changedFiles": [
-            "+client/editor.lua",
-            "+client/playerinfo.lua",
-            "+web/editor.css",
-            "+web/editor.js",
-            "+web/hud-picker.css",
-            "+web/hud-picker.js",
-            "~.pack/INSTALLATION.md",
-            "~assets/radar-mask.png",
-            "~client/hud.lua",
-            "~client/quick-menu.lua",
             "~config.lua",
-            "~docs/INSTALLATION.md",
             "~fxmanifest.lua",
-            "~stream/pause_menu_pages_settings.gfx",
-            "~stream/popup_warning.gfx",
-            "~web/ (8 files)"
+            "~server/sv-version.lua",
+            "~web/hud.css",
+            "~web/index.html",
+            "~web/quick-menu.css",
+            "~web/quick-menu.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
