@@ -80,20 +80,15 @@
         ]
     },
     "filo_doj": {
-        "version": "1.0.0",
-        "description": "- **Breaking:** Add `ox_inventory` and `ox_target` as dependencies; start them before `filo_doj`\n- **Breaking:** Change `Config.Judges` to `judge = 1`, so grade 0 of the `judge` job (Court Clerk) is no longer a judge\n- Add the courthouse creator, `/dojcreator` for admins, to place duty points, shared stashes, personal lockers, gavels and judge microphone zones in game\n- Add judge microphone zones: while a judge stands inside one, pma-voice carries their voice across the courtroom\n- Add a gavel sound that everyone in range hears, quieter with distance, with `Config.Courtroom.GavelSound` for your own file\n- Add `Config.branding` for the creator's name, logo and colours\n- Add an installation guide with the `judge` and `lawyer` job grades for Qbox and QBCore",
+        "version": "1.1.0",
+        "description": "- Add who a microphone zone amplifies: judges only, the listed jobs (counsel tables) or anyone (witness stand, defendant)\n- Add a speaker voice effect, so everyone hears whoever is on a microphone through the courtroom PA, with a checkbox per zone\n- Change \"Judge microphone\" to \"Microphone zone\" in the creator\n- Fix the creator rounding a point's radius down to a whole metre",
         "changedFiles": [
-            "+client/controlprompts.lua",
-            "+client/creator.lua",
-            "+INSTALL.md",
-            "+server/points.lua",
-            "+shared/brand.lua",
-            "+web/ (7 files)",
-            "~bridge/server.lua",
+            "~client/creator.lua",
             "~client/main.lua",
-            "~config.lua",
             "~fxmanifest.lua",
-            "~server/courtroom.lua"
+            "~INSTALL.md",
+            "~server/points.lua",
+            "~web/creator/app.js"
         ]
     },
     "filo_drugscreator": {
