@@ -116,22 +116,21 @@
         ]
     },
     "filo_firefighter": {
-        "version": "1.1.0",
-        "description": "- Add random flame sizes and types, so no two flames look the same\n- Add smaller tongues of fire and a smoke column around every flame\n- Add a map blip for every active fire for all on-duty firefighters (also ones who clock in after it started), a small blip on each burning flame nearby and an arrow over each flame (`Config.fire.blip`, `Config.fire.markers`)\n- Add an aiming pose for the hose nozzle (`Config.hose.aimAnim`)\n- Change the hose line to look much thicker (`Config.hose.ropeStrands`, `Config.hose.ropeWidth`)\n- Change fires to start with twice as many flames (`Config.fire.startFlamesPerIntensity`) and grow to more (`Config.fire.maxFlamesPerIntensity` is now 5)\n- Change flame size and variety to be set in `Config.particles` (`size`, `cluster`, `always`, `flameSmoke`)\n- Fix flames placed around a location's centre floating or sitting underground on uneven ground\n- Fix new flames stacking on top of each other\n- Fix the truck cannon still spraying with an empty tank, or for players who aren't on-duty firefighters\n- Fix fire trucks that didn't come from a garage having no water",
+        "version": "2.0.0",
+        "description": "- **Breaking:** `Config.autoFires.interval` is now one number (minutes between rolls) instead of a `{ min, max }` range, and the new `Config.autoFires.chance` sets the % chance each roll starts a fire\n- **Breaking:** `Config.hose.aimAnim` is replaced by `Config.hose.aimAnims`, a list where the first animation the game has is used\n- Add a real hose prop laid along the ground behind you as you walk, hanging from your hand down to the ground (`Config.hose.segment`, `trailStep`, `hangBack`)\n- Add a streamed hose nozzle held in the left hand, with a short hose piece to the right hand, also shown for other players (`Config.hose.nozzleBone`, `nozzleAttach`, `linkLength`)\n- Add `/hosenozzle` for admins to tune the nozzle's position in the hand live\n- Add a streamed fire pole slide animation, with the player behind the pole facing it (`Config.points.pole.anims`, `distance`, `height`)\n- Add a pole slide preview when placing a pole in the creator\n- Change the hose aim pose to the minigun hold, kept the whole time the hose is held, so you can walk and spray sideways\n- Change the water stream to start from the nozzle and follow the arm\n- Fix melee attacks and lock-on snapping to peds while holding the hose\n- Fix foam spraying in the wrong direction (`Config.particles.waterRotation`, `foamRotation`)\n- Fix the fire blip flash timing being off between server and client",
         "paid": true,
         "changedFiles": [
-            "+!INSTALLATION/images/foam_concentrate.png",
-            "+!INSTALLATION/images/scba.png",
-            "~!INSTALLATION/ox_inventory/items.lua",
-            "~client/cannon.lua",
-            "~client/fires.lua",
-            "~client/hose.lua",
-            "~client/ropes.lua",
+            "+stream/filo_firefighter_pole.ycd",
+            "+stream/prop_hose_nozzle.ydr",
+            "+stream/prop_hose_nozzle.ytyp",
+            "+stream/prop_hose_segment.ydr",
+            "~client/ (7 files)",
             "~config.lua",
             "~fxmanifest.lua",
             "~locales/en.json",
+            "~server/actions.lua",
             "~server/fires.lua",
-            "~server/water.lua"
+            "~web/app.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
