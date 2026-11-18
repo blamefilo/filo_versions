@@ -92,13 +92,26 @@
         ]
     },
     "filo_drugscreator": {
-        "version": "1.0.1",
-        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
+        "version": "1.1.0",
+        "description": "- Add an in-world prop editor to animation actions: `Edit prop in world` opens a gizmo on the hand prop with the animation playing, the same one as in filo_consumables\n- Add a bone picker to the hand prop\n- Add hand props to the `Smoke joint` and `Drink` animation presets, and new `Smoke cigarette` and `Inject` presets. Picking a preset with a prop also fills the hand prop. Copy the new `Config.Suggestions.anims` entries from `config.lua` into yours to get them\n- Add support for filo_consumables items in Drug Effects: using the consumable plays it as usual (animation, props, statuses) and then starts the effect, so one item is enough. Needs filo_consumables 2.3.0\n- Add the item image to Drug Effects cards\n- Rework the creator so switching tabs, searching and editing only update what changed instead of rebuilding the whole window\n- Change the creator to load a minified build\n- Remove filo_consumables' shared base item from the item suggestions; its consumables are listed by name",
+        "paid": true,
         "changedFiles": [
-            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+client/cl_freecam.lua",
+            "+client/cl_propeditor.lua",
+            "+web/ (32 files)",
+            "~.gitattributes",
+            "~client/cl_admin.lua",
+            "~client/cl_effects.lua",
+            "~client/cl_main.lua",
+            "~config.lua",
             "~fxmanifest.lua",
-            "~web/style.css"
-        ]
+            "~server/sv_actions.lua",
+            "~server/sv_normalize.lua",
+            "~server/sv-version.lua",
+            "~web/index.html",
+            "-web/ (6 files)"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_duty": {
         "version": "1.0.0",
