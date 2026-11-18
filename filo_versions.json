@@ -60,13 +60,23 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_consumables": {
-        "version": "2.2.1",
-        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
+        "version": "2.3.0",
+        "description": "- Add `Edit sip in world` to Hold & sip: opens the prop editor on the first prop at its sip position, with the sip animation playing\n- Add the `filo_consumables:server:consumed` server event (`source`, spawn name), fired after a consumable is used, once per item in hold mode. filo_drugscreator 1.1.0 uses it to start a drug effect bound to the consumable\n- Change the creator to load a minified build\n- Change the prop editor to bundle three.js as an ES module, which removes the `three.min.js` deprecation warning from the console",
         "paid": true,
         "changedFiles": [
-            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+server/sv-version.lua",
+            "+web/ (11 files)",
+            "~.gitattributes",
+            "~client/cl_admin.lua",
+            "~client/cl_propeditor.lua",
             "~fxmanifest.lua",
-            "~web/style.css"
+            "~server/sv_use.lua",
+            "~web/app.js",
+            "~web/gizmo.js",
+            "~web/index.html",
+            "-web/vendor/THREE_LICENSE.txt",
+            "-web/vendor/three.min.js",
+            "-web/vendor/TransformControls.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
