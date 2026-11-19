@@ -1,21 +1,13 @@
 {
     "filo_ambulance": {
-        "version": "1.6.0",
-        "description": "- Rework the hospital creator, death screen and injury card in Svelte, built and minified with Vite\n- Remove the background blur behind the creator, which cost frames",
+        "version": "1.6.2",
+        "description": "- Fix players killed by a long fall going down in mid-air. They now land first, then go into knockout, last stand or death",
         "paid": true,
         "changedFiles": [
-            "+!INSTALLATION/3_images/acetaminophen.png",
-            "+!INSTALLATION/3_images/ibuprofen.png",
-            "+!INSTALLATION/3_images/ketorolac.png",
-            "+!INSTALLATION/3_images/lidocaine.png",
-            "+!INSTALLATION/3_images/naproxen.png",
-            "+web/ (28 files)",
-            "~.gitattributes",
             "~fxmanifest.lua",
-            "~modules/injurycard/client.lua",
-            "~web/index.html",
-            "~web/injuries.html",
-            "-web/ (10 files)"
+            "~modules/compatibility/frameworks/qb/client.lua",
+            "~modules/death/client.lua",
+            "~server.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
