@@ -23,12 +23,14 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.1.1",
-        "description": "- Fix the saved look loading after the multicharacter fade-in on a character's first login, which swapped the ped and cut off the multicharacter's spawn animation (qb / qbx)",
+        "version": "1.1.2",
+        "description": "- Change the menu to load a minified build, so it opens faster\n- Fix the variant number being pushed off the right edge in `arrows` selector mode",
         "changedFiles": [
-            "~client/framework.lua",
-            "~client/outfits.lua",
-            "~fxmanifest.lua"
+            "+.gitattributes",
+            "+web/ (10 files)",
+            "~fxmanifest.lua",
+            "~web/index.html",
+            "~web/style.css"
         ]
     },
     "filo_blips": {
