@@ -254,19 +254,16 @@
         "version": "1.0.0"
     },
     "filo_rewards": {
-        "version": "1.1.1",
-        "description": "- Change screen titles to uppercase in Barlow Semi Condensed Bold (upright), for example `FOB PROGRAMMER` and `LAST STAND`. Buttons, tabs and labels stay in sentence case",
+        "version": "1.2.0",
+        "description": "- Add a purchase popup with the item's image, what was paid and the coins left, instead of the small notice at the bottom\n- Rework the menu in Svelte instead of React, for a smaller and faster UI",
         "paid": true,
         "changedFiles": [
-            "+web/dist/assets/index-C8di0Yux.js",
-            "+web/dist/assets/index-CYnMrg5B.css",
-            "+web/dist/fonts/BarlowSemiCondensed-Bold.ttf",
-            "+web/public/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+server/sv-version.lua",
+            "+web/ (23 files)",
+            "~.gitattributes",
             "~fxmanifest.lua",
-            "~web/dist/index.html",
-            "~web/src/styles.css",
-            "-web/dist/assets/index-C-09c8I1.js",
-            "-web/dist/assets/index-C03IT-nx.css"
+            "~web/ (7 files)",
+            "-web/ (11 files)"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
