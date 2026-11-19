@@ -15,15 +15,15 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.2.1",
-        "description": "- Change `/reloadskin` to fire `illenium-appearance:client:reloadSkin` like illenium-appearance, so tattoo scripts that listen for it reload too\n- Fix 0r-tattoo_designer tattoos disappearing while the appearance menu is open and after it closes",
+        "version": "1.2.2",
+        "description": "- Fix the `attempt to index a function value (global 'Player')` error when opening outfits or reloading skin through the illenium-appearance, qb-clothing or skinchanger events",
         "changedFiles": [
-            "~client/appearance.lua",
             "~client/bridge/illenium.lua",
-            "~client/menu.lua",
+            "~client/bridge/qbclothing.lua",
+            "~client/bridge/skinchanger.lua",
             "~client/outfits.lua",
-            "~fxmanifest.lua",
-            "~server/main.lua"
+            "~client/stores.lua",
+            "~fxmanifest.lua"
         ]
     },
     "filo_blips": {
