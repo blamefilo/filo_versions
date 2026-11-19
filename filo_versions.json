@@ -270,6 +270,19 @@
     "filo_ridehailing": {
         "version": "1.0.0"
     },
+    "filo_robberycreator": {
+        "version": "1.1.0",
+        "description": "- Rework the creator's interface in Svelte, built and minified with Vite\n- Fix the flow map being squashed under the setup checklist when a robbery has many warnings\n- Fix dragging steps by the grip to reorder them, which didn't work in game\n- Remove the background blur behind the creator, which cost frames",
+        "paid": true,
+        "changedFiles": [
+            "+web/ (32 files)",
+            "~.gitattributes",
+            "~fxmanifest.lua",
+            "~web/index.html",
+            "-web/ (7 files)"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_seatbelt": {
         "version": "1.0.0"
     },
