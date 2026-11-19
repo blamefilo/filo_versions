@@ -15,11 +15,15 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.3.1",
-        "description": "- Fix `client/outfits.lua` failing to load (`')' expected near 't'`), which broke outfits, wardrobes and `/reloadskin`",
+        "version": "1.4.0",
+        "description": "- Add an Auto camera button to the appearance menu, next to Spotlight and the pose button. Turn it off to stop the camera moving when you hover over pieces or switch tabs; the menu remembers the choice",
         "changedFiles": [
-            "~client/outfits.lua",
-            "~fxmanifest.lua"
+            "+web/dist/assets/index-DbzKCf0s.js",
+            "~fxmanifest.lua",
+            "~web/app.js",
+            "~web/dist/index.html",
+            "~web/index.html",
+            "-web/dist/assets/index-ytN-9s8b.js"
         ]
     },
     "filo_blips": {
