@@ -23,14 +23,20 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.1.2",
-        "description": "- Change the menu to load a minified build, so it opens faster\n- Fix the variant number being pushed off the right edge in `arrows` selector mode",
+        "version": "1.2.0",
+        "description": "- Add `Config.TattooScript` (`'rcore'` or `'0r'`) to hand tattoos to rcore_tattoos or 0r-tattoo_designer: their tattoos are put back after every look change, and the built-in tattoo parlours and tattoo tab turn off\n- Remove the browser's up/down spinners from the number boxes",
         "changedFiles": [
-            "+.gitattributes",
-            "+web/ (10 files)",
+            "+web/dist/assets/index-Dro_fZsH.css",
+            "+web/dist/assets/index-ytN-9s8b.js",
+            "~client/appearance.lua",
+            "~client/menu.lua",
+            "~client/stores.lua",
+            "~config.lua",
             "~fxmanifest.lua",
-            "~web/index.html",
-            "~web/style.css"
+            "~web/dist/index.html",
+            "~web/style.css",
+            "-web/dist/assets/index-CJo1aZlT.js",
+            "-web/dist/assets/index-DnM2pEPb.css"
         ]
     },
     "filo_blips": {
