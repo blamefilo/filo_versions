@@ -15,15 +15,12 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.4.0",
-        "description": "- Add an Auto camera button to the appearance menu, next to Spotlight and the pose button. Turn it off to stop the camera moving when you hover over pieces or switch tabs; the menu remembers the choice",
+        "version": "1.4.1",
+        "description": "- Change the 0r-tattoo_designer refresh to run only when the menu closes and on `/reloadskin`, not after every change\n- Fix hair fades disappearing when 0r-tattoo_designer reapplies tattoos",
         "changedFiles": [
-            "+web/dist/assets/index-DbzKCf0s.js",
-            "~fxmanifest.lua",
-            "~web/app.js",
-            "~web/dist/index.html",
-            "~web/index.html",
-            "-web/dist/assets/index-ytN-9s8b.js"
+            "~client/appearance.lua",
+            "~config.lua",
+            "~fxmanifest.lua"
         ]
     },
     "filo_blips": {
