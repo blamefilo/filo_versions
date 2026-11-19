@@ -243,16 +243,15 @@
         "version": "1.0.0"
     },
     "filo_radialmenu": {
-        "version": "1.1.0",
-        "description": "- Add hover, select and back sounds, set or muted with `Config.Sounds`\n- Change the menu UI to a minified build and drop the background blur for better performance\n- Fix players being able to shoot while the wheel is open after picking an option or opening a submenu\n- Fix the weapon firing right as the wheel closes from the selecting click\n- Fix vehicle, passenger and aircraft weapons firing while the wheel is open",
+        "version": "1.1.1",
+        "description": "- Fix the top of the highlighted option's icon being cut off",
         "paid": true,
         "changedFiles": [
-            "+web/ (9 files)",
-            "~.gitattributes",
-            "~client/cl-main.lua",
-            "~config.lua",
+            "+web/dist/assets/index-0WOwMu1G.js",
             "~fxmanifest.lua",
-            "~web/index.html"
+            "~web/dist/index.html",
+            "~web/script.js",
+            "-web/dist/assets/index-B83DEt9E.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
