@@ -210,17 +210,15 @@
         "version": "1.0.0"
     },
     "filo_police": {
-        "version": "1.4.0",
-        "description": "- Add QBCore and ESX support next to Qbox. The framework is picked automatically, and the framework code is in the editable `bridge/` folder\n- Change the unpaid clamp list to read `owned_vehicles` on ESX\n- Change the bundled filo_joblib to 1.1.0",
+        "version": "1.5.0",
+        "description": "- Rework the creator's interface in Svelte, built and minified with Vite\n- Remove the background blur behind the creator, which cost frames",
         "paid": true,
         "changedFiles": [
-            "+bridge/client.lua",
-            "+bridge/server.lua",
-            "+server/sv-version.lua",
-            "~client/ (6 files)",
+            "+web/ (23 files)",
+            "~.gitattributes",
             "~fxmanifest.lua",
-            "~server/ (13 files)",
-            "~shared/departments.lua"
+            "~web/index.html",
+            "-web/ (6 files)"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
