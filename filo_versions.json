@@ -209,6 +209,15 @@
             "~server/utils.lua"
         ]
     },
+    "filo_keybinds": {
+        "version": "1.0.1",
+        "description": "- Change `/keybinds` to a server command with help text in chat suggestions",
+        "changedFiles": [
+            "+server/sv-main.lua",
+            "~client/cl-main.lua",
+            "~fxmanifest.lua"
+        ]
+    },
     "filo_manual": {
         "version": "1.0.0"
     },
