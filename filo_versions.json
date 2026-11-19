@@ -15,13 +15,11 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.3.0",
-        "description": "- Add a Job outfits submenu to the wardrobe, with a note when your job has no outfits for your rank, and move the boss outfit managers into it\n- Add an Everyday clothes option to the wardrobe that changes back into your own look\n- Change the database tables to be created on start when missing, so running `sql/install.sql` is optional",
+        "version": "1.3.1",
+        "description": "- Fix `client/outfits.lua` failing to load (`')' expected near 't'`), which broke outfits, wardrobes and `/reloadskin`",
         "changedFiles": [
-            "+server/sql.lua",
             "~client/outfits.lua",
-            "~fxmanifest.lua",
-            "~INSTALL.md"
+            "~fxmanifest.lua"
         ]
     },
     "filo_blips": {
