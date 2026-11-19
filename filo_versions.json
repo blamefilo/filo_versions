@@ -237,6 +237,20 @@
     "filo_progressbar": {
         "version": "1.0.0"
     },
+    "filo_radialmenu": {
+        "version": "1.1.0",
+        "description": "- Add hover, select and back sounds, set or muted with `Config.Sounds`\n- Change the menu UI to a minified build and drop the background blur for better performance\n- Fix players being able to shoot while the wheel is open after picking an option or opening a submenu\n- Fix the weapon firing right as the wheel closes from the selecting click\n- Fix vehicle, passenger and aircraft weapons firing while the wheel is open",
+        "paid": true,
+        "changedFiles": [
+            "+web/ (9 files)",
+            "~.gitattributes",
+            "~client/cl-main.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~web/index.html"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_radio": {
         "version": "1.1.0",
         "description": "- Add a `Handheld at mouth` talk animation\n- Add per-animation prop placement: `prop` in `Config.Animations` can be a table with `offset`, `rotation` and `bone`\n- Rework the radio look into a realistic duty handheld with an amber backlit screen, speaker grille and rubber keys\n- Change the radio's top plate to show `Config.Branding.name`\n- Change the transmit-off sound to a cleaner double beep\n- Remove the `Handheld (VS Radio)` animation",
