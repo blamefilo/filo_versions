@@ -78,18 +78,13 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_consumables": {
-        "version": "2.4.0",
-        "description": "- Rework the creator's interface in Svelte. It looks and works the same, with faster updates while editing",
+        "version": "2.5.0",
+        "description": "- Add more drunk stages, starting with a barely noticeable camera shake and screen filter at 5%, and two light stages for being high\n- Add `blendSeconds` to `Config.Intoxication`: how slowly the effects ease in and out (default 4 seconds)\n- Change drunk and high effects to blend in and out instead of switching on at once. The screen filter, camera shake and steering pull grow smoothly between stages and fade out when sobering up, `SoberUp` included",
         "paid": true,
         "changedFiles": [
-            "+web/ (25 files)",
-            "~fxmanifest.lua",
-            "~web/dist/index.html",
-            "~web/index.html",
-            "~web/package-lock.json",
-            "~web/package.json",
-            "~web/vite.config.js",
-            "-web/ (11 files)"
+            "~client/cl_intox.lua",
+            "~config.lua",
+            "~fxmanifest.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
