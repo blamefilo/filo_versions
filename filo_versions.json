@@ -352,17 +352,21 @@
         "version": "1.0.0"
     },
     "filo_ui": {
-        "version": "2.3.0",
-        "description": "- Rework the quick menu into a pause menu layout: player and server header, a player card, large Map and Resume tiles, Settings and Keybinds tiles, and key hints with Tebex and Disconnect at the bottom\n- Change quick menu arrow keys to move to the nearest tile in that direction\n- Change the default HUD editor command to `/hud` (`Config.HudEditor.command`)\n- Fix status icons sitting off-centre in the `arc`, `slant` and other non-classic HUD styles\n- Fix the food and health icons being drawn slightly off-centre",
+        "version": "2.4.0",
+        "description": "- Add the player's mugshot to the quick menu header\n- Add profile artwork to the quick menu player card: PNGs in `web/profile/`, per job or a default (`Config.QuickMenu.profileArt`)\n- Change the Keybinds tile to grey out when `filo_keybinds` isn't running, and to open it through its `open` export\n- Change the NUI to a Svelte build (no change in look or behaviour)\n- Remove the blur behind the HUD panels and the HUD editor",
         "paid": true,
         "changedFiles": [
+            "+web/ (29 files)",
+            "~.gitattributes",
+            "~client/quick-menu.lua",
             "~config.lua",
             "~fxmanifest.lua",
-            "~server/sv-version.lua",
+            "~stream/pause_menu_pages_settings.gfx",
             "~web/hud.css",
             "~web/index.html",
             "~web/quick-menu.css",
-            "~web/quick-menu.js"
+            "~web/styles.css",
+            "-web/ (8 files)"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
