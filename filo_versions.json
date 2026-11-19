@@ -1,11 +1,21 @@
 {
     "filo_ambulance": {
-        "version": "1.5.0",
-        "description": "- Add `esx_addonaccount` as a society provider, so fees and shop purchases go into `society_<job>` on ESX. `provider = 'auto'` picks it when no other banking resource runs\n- Fix wheelchairs not working on QBCore and ESX: picking one up checks for room in the inventory and pushing checks job and duty through the framework bridge",
+        "version": "1.6.0",
+        "description": "- Rework the hospital creator, death screen and injury card in Svelte, built and minified with Vite\n- Remove the background blur behind the creator, which cost frames",
         "paid": true,
         "changedFiles": [
+            "+!INSTALLATION/3_images/acetaminophen.png",
+            "+!INSTALLATION/3_images/ibuprofen.png",
+            "+!INSTALLATION/3_images/ketorolac.png",
+            "+!INSTALLATION/3_images/lidocaine.png",
+            "+!INSTALLATION/3_images/naproxen.png",
+            "+web/ (28 files)",
+            "~.gitattributes",
             "~fxmanifest.lua",
-            "~modules/ (6 files)"
+            "~modules/injurycard/client.lua",
+            "~web/index.html",
+            "~web/injuries.html",
+            "-web/ (10 files)"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
