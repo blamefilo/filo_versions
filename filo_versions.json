@@ -213,6 +213,17 @@
             "~fxmanifest.lua"
         ]
     },
+    "filo_loadingscreen": {
+        "version": "1.0.1",
+        "description": "- Change the screen to a minified build and drop the background blur for better performance\n- Fix the top of the loading percentage and title being cut off",
+        "changedFiles": [
+            "+web/ (8 files)",
+            "~.gitattributes",
+            "~fxmanifest.lua",
+            "~web/index.html",
+            "~web/style.css"
+        ]
+    },
     "filo_manual": {
         "version": "1.0.0"
     },
