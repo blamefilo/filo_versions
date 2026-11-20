@@ -15,11 +15,11 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.4.2",
-        "description": "- Fix face features resetting to 0 after `/reloadskin`, after changing parents at the plastic surgeon, and being overwritten with zeros by the next save from another menu",
+        "version": "1.4.3",
+        "description": "- Change the appearance menu's Auto camera to start off, so the camera stays where you put it. Players who turned it on keep it on",
         "changedFiles": [
-            "~client/appearance.lua",
-            "~fxmanifest.lua"
+            "~fxmanifest.lua",
+            "~web/app.js"
         ]
     },
     "filo_blips": {
