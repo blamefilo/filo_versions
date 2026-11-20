@@ -137,12 +137,20 @@
         "version": "1.0.0"
     },
     "filo_fastfood": {
-        "version": "2.2.0",
-        "description": "- Add **Move with gizmo** to every spawn, path, counter and line point\n- Change **Record points** to **Place points**: move a see-through copy of yourself with a mouse gizmo and press E to drop each point, Enter when done\n- Change seat placement to the mouse gizmo while you sit in the seat: drag the arrows to move, the ring to turn, click to drop it, hold right mouse to look around",
+        "version": "2.3.0",
+        "description": "- Add `/fastfoodprices` for business bosses to set their own menu prices, saved per location and kept when admins edit the location\n- Add **Owner min price** and **Owner max price** to menu items in the creator (`minPrice` / `maxPrice` in config) to limit what owners can charge\n- Add `Config.OwnerPricing` to turn owner pricing off, rename the command, let a job grade change prices instead of only bosses, and set the default price range (50% to 200% of the base price)\n- Add `Config.UseFiloConsumables` so locations wait for filo_consumables items to load instead of reporting them missing at startup\n- Change the UI to a minified build, which loads faster",
         "changedFiles": [
-            "+client/gizmo.lua",
+            "+client/prices.lua",
+            "+server/prices.lua",
+            "+server/sv-version.lua",
+            "+web/ (9 files)",
+            "~.gitattributes",
             "~client/creator.lua",
-            "~fxmanifest.lua"
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~server/locations.lua",
+            "~server/main.lua",
+            "~web/index.html"
         ]
     },
     "filo_firefighter": {
