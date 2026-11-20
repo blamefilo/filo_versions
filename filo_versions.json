@@ -15,11 +15,13 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.4.3",
-        "description": "- Change the appearance menu's Auto camera to start off, so the camera stays where you put it. Players who turned it on keep it on",
+        "version": "1.5.0",
+        "description": "- Add `/takeoff` without clothing items: taking a piece off saves it and puts the slot back to its undressed look, and the same menu puts saved pieces back on one at a time or all at once. Turn it off with `Config.Items.takeOffWithoutItems = false`\n- Add the `putOnClothing` and `getSavedClothing` exports\n- Change `/takeoff` to a server command, so it shows in chat suggestions with its help text",
         "changedFiles": [
+            "~client/items.lua",
+            "~config.lua",
             "~fxmanifest.lua",
-            "~web/app.js"
+            "~server/items.lua"
         ]
     },
     "filo_blips": {
