@@ -15,13 +15,19 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.5.0",
-        "description": "- Add `/takeoff` without clothing items: taking a piece off saves it and puts the slot back to its undressed look, and the same menu puts saved pieces back on one at a time or all at once. Turn it off with `Config.Items.takeOffWithoutItems = false`\n- Add the `putOnClothing` and `getSavedClothing` exports\n- Change `/takeoff` to a server command, so it shows in chat suggestions with its help text",
+        "version": "1.6.0",
+        "description": "- Add smooth camera transitions: the menu camera now swings around the player from the gameplay camera when the menu opens and back when it closes, instead of cutting\n- Add menu animations: panels slide in and out on open and close, tab content and tiles rise in when you switch, sections expand smoothly, and buttons, tiles and sliders react to hover and clicks\n- Change the confirm dialog to pop in and fade out",
         "changedFiles": [
-            "~client/items.lua",
-            "~config.lua",
+            "+web/dist/assets/index-BgriHzPS.css",
+            "+web/dist/assets/index-DWGUrtTM.js",
+            "~client/camera.lua",
+            "~client/menu.lua",
             "~fxmanifest.lua",
-            "~server/items.lua"
+            "~web/app.js",
+            "~web/dist/index.html",
+            "~web/style.css",
+            "-web/dist/assets/index-DbzKCf0s.js",
+            "-web/dist/assets/index-Dro_fZsH.css"
         ]
     },
     "filo_blips": {
