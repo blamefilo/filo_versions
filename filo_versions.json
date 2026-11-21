@@ -384,27 +384,15 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_vehiclekeys": {
-        "version": "3.0.0",
-        "description": "- **Breaking:** Locks and the engine no longer use the `lockState` and `isEngineOn` state bags. Scripts that read them should use `GetVehicleDoorLockStatus` and `GetIsVehicleEngineRunning` instead\n- **Breaking:** Owned vehicles hand out their key once, on their first spawn. After that, garages and other scripts can't create new keys; a lost key needs the locksmith, the offline store, `/givekey` or `/keyadmin`\n- Add `Config.AlarmDuration`: the alarm now stops on its own, when the car is unlocked with its key, or with the fob's panic button\n- Add `Config.LockSounds`: nearby players hear GTA's remote lock and unlock chirp\n- Add `Config.KeepSteeringAngle` to keep the wheels turned when the driver gets out\n- Add `Config.KeepLightsState` to keep the headlights and high beams on when the driver gets out\n- Rework keys to fit by plate, so a key never stops working because vehicle state didn't sync. Re-keyed vehicles still only accept keys with the new key id\n- Rework locks and the engine to use the game's own state, set by the server and applied by the vehicle owner and nearby players\n- Change owned vehicles to remember a key left in the ignition when they are stored; the engine always spawns off\n- Change re-keying to take the old keys from online players straight away, including a key left in a stored car's ignition\n- Change the default of `Config.SimpleIgnition` to `true`\n- Fix keys not working on vehicles taken out of a garage or respawned\n- Fix garage vehicles spawning with the engine running and no key in the ignition\n- Fix the alarm sounding for five minutes and ignoring its stop\n- Fix auto start and police or job players creating or losing key items through the ignition\n- Fix \"Insert Keys\" showing while a key is already in the ignition\n- Fix the in-vehicle prompts showing late after entering a vehicle\n- Fix `/keyadmin` showing stored vehicles with a key in the ignition or the engine on\n- Close client events that let any player give themselves keys, job access or a running ignition for any vehicle",
+        "version": "3.0.1",
+        "description": "- Fix pressing a button on the second page of the key fob screen playing the swipe animation",
         "paid": true,
         "changedFiles": [
-            "+client/cl-lights.lua",
-            "+client/cl-steering.lua",
-            "+web/dist/assets/index-DsBTC92_.js",
-            "+web/dist/assets/index-ESqCmHTC.css",
-            "~bridge/ (6 files)",
-            "~client/cl-functions.lua",
-            "~client/cl-main.lua",
-            "~client/cl-nui.lua",
-            "~client/cl-utils.lua",
+            "+web/dist/assets/index-IHxAMZnN.js",
             "~fxmanifest.lua",
-            "~server/ (10 files)",
-            "~shared/sh-config.lua",
-            "~shared/sh-utils.lua",
             "~web/dist/index.html",
-            "~web/src/components/Keyfob.css",
-            "-web/dist/assets/index-CHrZ7PxE.js",
-            "-web/dist/assets/index-D-Vsyjp_.css"
+            "~web/src/components/Keyfob.jsx",
+            "-web/dist/assets/index-DsBTC92_.js"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
