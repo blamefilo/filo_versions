@@ -69,13 +69,22 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_consumables": {
-        "version": "2.5.0",
-        "description": "- Add more drunk stages, starting with a barely noticeable camera shake and screen filter at 5%, and two light stages for being high\n- Add `blendSeconds` to `Config.Intoxication`: how slowly the effects ease in and out (default 4 seconds)\n- Change drunk and high effects to blend in and out instead of switching on at once. The screen filter, camera shake and steering pull grow smoothly between stages and fade out when sobering up, `SoberUp` included",
+        "version": "2.5.1",
+        "description": "- Add presets for the animation dictionary and clip fields in the creator (`Config.Suggestions.anims`), with clips filtered to the chosen dictionary\n- Fix the creator's preset dropdowns (screen effect, timecycle, camera shake, models, scenarios, items, images, walk style) not opening in-game",
         "paid": true,
         "changedFiles": [
-            "~client/cl_intox.lua",
+            "+web/dist/assets/index-CxpDLe6Y.js",
+            "+web/dist/assets/index-D9dZCvKj.css",
+            "+web/src/lib/Combo.svelte",
             "~config.lua",
-            "~fxmanifest.lua"
+            "~fxmanifest.lua",
+            "~web/dist/index.html",
+            "~web/src/App.svelte",
+            "~web/src/lib/Field.svelte",
+            "~web/src/lib/schemas.js",
+            "~web/src/style.css",
+            "-web/dist/assets/index-BMPZ_eTn.js",
+            "-web/dist/assets/index-C0RKkObK.css"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
