@@ -15,16 +15,13 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.7.0",
-        "description": "- Add the outfit bag: place the `outfitbag` item on the ground and open it with ox_target to change into a saved outfit piece by piece, with an animation for each piece (`Config.OutfitBag`)\n- Fix importing an outfit code failing with a database error",
+        "version": "1.7.1",
+        "description": "- Change `/reloadskin` to respawn the ped model, so a broken or swapped ped is fully reset instead of just re-dressed\n- Fix cancelling the appearance menu not putting back the old ped when the player changed ped model, mainly for addon peds\n- Fix changing ped model resetting health",
         "changedFiles": [
-            "+client/outfitbag.lua",
-            "+install/outfitbag.png",
-            "+server/outfitbag.lua",
-            "~config.lua",
-            "~fxmanifest.lua",
-            "~INSTALL.md",
-            "~server/outfits.lua"
+            "~client/appearance.lua",
+            "~client/menu.lua",
+            "~client/outfits.lua",
+            "~fxmanifest.lua"
         ]
     },
     "filo_blips": {
