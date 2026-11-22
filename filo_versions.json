@@ -186,24 +186,15 @@
         "version": "1.0.0"
     },
     "filo_jack": {
-        "version": "2.0.0",
-        "description": "- **Breaking:** `Config.MaxHeight` now sets how far the wheels rise off the ground (new default `0.15`, with `Config.PumpsToMax` at `5`). Copy the new config or retune these two keys\n- Add a custom streamed jack with a moving pump handle and ram, replacing the old axle stand prop\n- Add mouse-drag pumping that works the handle up and down, with `Config.PumpMode` (`drag` or `auto`), `Config.PumpStrength`, `Config.PumpResistance` and `Config.AutoPumpSpeed`\n- Add `Lower Jack` to let the vehicle back down before removing the jack\n- Add `Config.LiftSpeed` and `Config.LowerSpeed` for how fast the vehicle rises and drops\n- Add `Config.KeyGuide` to show the pump key guide with ox_lib text UI or `sleepless_prompts`\n- Add support for vehicles with middle wheels\n- Rework lifting so the body tilts around the opposite wheels like a real jack, smoothly animated for every player\n- Change jacked vehicles so nobody can get in and drive off until the jacks are removed\n- Change removing a jack to require lowering it first\n- Change the `vehicle_jack` item image",
+        "version": "2.0.1",
+        "description": "- Add an extension screw that winds out of the ram on tall and lifted vehicles, so the jack always reaches the body\n- Fix the jack standing outside the body on some vehicles; it now goes under the sill between the wheels\n- Fix the ram stopping short of the underbody on lifted vehicles",
         "paid": true,
         "changedFiles": [
-            "+client/cl-physics.lua",
-            "+client/cl-props.lua",
-            "+stream/filo_jack_base.ydr",
-            "+stream/filo_jack_handle.ydr",
-            "+stream/filo_jack_ram.ydr",
-            "+stream/filo_jack.ytyp",
-            "~client/cl-constants.lua",
-            "~client/cl-functions.lua",
+            "+stream/filo_jack_screw.ydr",
+            "+stream/filo_jack_screw.ytyp",
             "~client/cl-main.lua",
+            "~client/cl-props.lua",
             "~fxmanifest.lua",
-            "~INSTALL/item images/vehicle_jack.png",
-            "~locales/en.json",
-            "~server/sv-main.lua",
-            "~shared/sh-config.lua",
             "~shared/sh-init.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
