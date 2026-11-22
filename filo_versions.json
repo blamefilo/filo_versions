@@ -15,13 +15,17 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.7.1",
-        "description": "- Change `/reloadskin` to respawn the ped model, so a broken or swapped ped is fully reset instead of just re-dressed\n- Fix cancelling the appearance menu not putting back the old ped when the player changed ped model, mainly for addon peds\n- Fix changing ped model resetting health",
+        "version": "1.7.2",
+        "description": "- Fix the appearance menu not showing hair, head and some prop slots for non-freemode (addon and story) peds",
         "changedFiles": [
+            "+web/dist/assets/index-DMHDxRXW.js",
             "~client/appearance.lua",
             "~client/menu.lua",
-            "~client/outfits.lua",
-            "~fxmanifest.lua"
+            "~fxmanifest.lua",
+            "~shared/data.lua",
+            "~web/app.js",
+            "~web/dist/index.html",
+            "-web/dist/assets/index-DWGUrtTM.js"
         ]
     },
     "filo_blips": {
