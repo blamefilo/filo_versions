@@ -15,17 +15,11 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.7.2",
-        "description": "- Fix the appearance menu not showing hair, head and some prop slots for non-freemode (addon and story) peds",
+        "version": "1.7.3",
+        "description": "- Fix hair fades stacking up while browsing them in the barber when `Config.TattooScript = '0r'`\n- Fix the hair fade disappearing after saving when the tattoo script re-applies its tattoos",
         "changedFiles": [
-            "+web/dist/assets/index-DMHDxRXW.js",
             "~client/appearance.lua",
-            "~client/menu.lua",
-            "~fxmanifest.lua",
-            "~shared/data.lua",
-            "~web/app.js",
-            "~web/dist/index.html",
-            "-web/dist/assets/index-DWGUrtTM.js"
+            "~fxmanifest.lua"
         ]
     },
     "filo_blips": {
