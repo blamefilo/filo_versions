@@ -95,15 +95,22 @@
         ]
     },
     "filo_doj": {
-        "version": "1.1.0",
-        "description": "- Add who a microphone zone amplifies: judges only, the listed jobs (counsel tables) or anyone (witness stand, defendant)\n- Add a speaker voice effect, so everyone hears whoever is on a microphone through the courtroom PA, with a checkbox per zone\n- Change \"Judge microphone\" to \"Microphone zone\" in the creator\n- Fix the creator rounding a point's radius down to a whole metre",
+        "version": "1.2.0",
+        "description": "- Add evidence boards placed in `/dojcreator`, as a floating screen or a TV prop, where players with the point's jobs draw and pin images and videos (`Config.Boards`)\n- Add rotation, tilt and height controls with a live preview when placing a board\n- Add `Config.MicEffect` to tune or turn off the PA speaker sound in microphone zones\n- Change the creator to load faster with a minified UI",
         "changedFiles": [
+            "+client/board.lua",
+            "+server/boards.lua",
+            "+web/ (22 files)",
+            "~.gitattributes",
             "~client/creator.lua",
             "~client/main.lua",
+            "~config.lua",
             "~fxmanifest.lua",
-            "~INSTALL.md",
             "~server/points.lua",
-            "~web/creator/app.js"
+            "~web/creator/app.js",
+            "~web/creator/icons.js",
+            "~web/creator/index.html",
+            "~web/index.html"
         ]
     },
     "filo_drugscreator": {
