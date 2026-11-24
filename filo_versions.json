@@ -359,14 +359,18 @@
         "description": "- Add qb-target support\n- Add translatable labels under `locales/`\n- Change slashing to be checked by the server (distance and held weapon)\n- Fix only the last slashed tire syncing to players who join later or drive up to the vehicle\n- Fix players getting stuck in place while turning towards the tire\n- Fix players staying marked as busy if the slash was interrupted"
     },
     "filo_stealwheels": {
-        "version": "1.2.0",
-        "description": "- Remove the `community_bridge` dependency: a built-in bridge now detects Qbox, QBCore or ESX, `ox_inventory` and `ox_target` or `qb-target`. You can remove `community_bridge` from your server if nothing else uses it",
+        "version": "2.0.0",
+        "description": "- **Breaking:** `Config.RequiredItem` and `Config.DecreaseDurability` are replaced by `Config.Tools`, a list of tool items with their own durability loss. Add the new `impact_gun` and `torque_wrench` items to ox_inventory\n- **Breaking:** Requires filo_bolt 1.1.0 or newer\n- Add the impact gun and torque wrench as tools, each shown in filo_bolt's minigame\n- Change the inventory to go through the built-in bridge, so `ox_inventory` is no longer required\n- Fix rear wheels on 4-wheeled cars not coming off or going back on correctly\n- Fix stolen and attached wheels taking a moment to show for other players\n- Fix tools not wearing down outside ox_inventory (ESX's default inventory still has no durability)",
         "paid": true,
         "changedFiles": [
-            "+bridge/core/client.lua",
-            "+bridge/core/server.lua",
-            "+bridge/core/shared.lua",
+            "+INSTALL/images/impact_gun.png",
+            "+INSTALL/images/tire_iron.png",
+            "+INSTALL/images/torque_wrench.png",
+            "~client/cl-main.lua",
             "~fxmanifest.lua",
+            "~INSTALL/ox_inventory.txt",
+            "~server/sv-main.lua",
+            "~shared/sh-config.lua",
             "~shared/sh-init.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
