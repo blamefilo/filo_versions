@@ -160,21 +160,21 @@
         ]
     },
     "filo_firefighter": {
-        "version": "2.0.0",
-        "description": "- **Breaking:** `Config.autoFires.interval` is now one number (minutes between rolls) instead of a `{ min, max }` range, and the new `Config.autoFires.chance` sets the % chance each roll starts a fire\n- **Breaking:** `Config.hose.aimAnim` is replaced by `Config.hose.aimAnims`, a list where the first animation the game has is used\n- Add a real hose prop laid along the ground behind you as you walk, hanging from your hand down to the ground (`Config.hose.segment`, `trailStep`, `hangBack`)\n- Add a streamed hose nozzle held in the left hand, with a short hose piece to the right hand, also shown for other players (`Config.hose.nozzleBone`, `nozzleAttach`, `linkLength`)\n- Add `/hosenozzle` for admins to tune the nozzle's position in the hand live\n- Add a streamed fire pole slide animation, with the player behind the pole facing it (`Config.points.pole.anims`, `distance`, `height`)\n- Add a pole slide preview when placing a pole in the creator\n- Change the hose aim pose to the minigun hold, kept the whole time the hose is held, so you can walk and spray sideways\n- Change the water stream to start from the nozzle and follow the arm\n- Fix melee attacks and lock-on snapping to peds while holding the hose\n- Fix foam spraying in the wrong direction (`Config.particles.waterRotation`, `foamRotation`)\n- Fix the fire blip flash timing being off between server and client",
+        "version": "2.1.0",
+        "description": "- Add responsible departments per fire location in `/firecreator`: only those departments get the dispatch and blips, and automatic fires only start there while enough of them are on duty (`Config.autoFires.minOnDuty`)\n- Change the creator and HUD to load faster with a minified UI",
         "paid": true,
         "changedFiles": [
-            "+stream/filo_firefighter_pole.ycd",
-            "+stream/prop_hose_nozzle.ydr",
-            "+stream/prop_hose_nozzle.ytyp",
-            "+stream/prop_hose_segment.ydr",
-            "~client/ (7 files)",
+            "+web/ (9 files)",
+            "~.gitattributes",
+            "~client/fires.lua",
             "~config.lua",
             "~fxmanifest.lua",
-            "~locales/en.json",
-            "~server/actions.lua",
             "~server/fires.lua",
-            "~web/app.js"
+            "~server/locations.lua",
+            "~shared/departments.lua",
+            "~shared/fires.lua",
+            "~web/app.js",
+            "~web/index.html"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
