@@ -284,6 +284,23 @@
             "~web/style.css"
         ]
     },
+    "filo_radiostation": {
+        "version": "1.1.0",
+        "description": "- Rework the radio tuner and the studio into a new UI, replacing the context menus\n- Add host mix sliders for music and soundboard volume, heard by everyone on the station\n- Change open panels to update live when the station, callers or music change",
+        "paid": true,
+        "changedFiles": [
+            "+web/fonts/BarlowSemiCondensed-Bold.ttf",
+            "+web/fonts/BarlowSemiCondensed-Medium.ttf",
+            "+web/fonts/OFL.txt",
+            "~client/main.lua",
+            "~fxmanifest.lua",
+            "~server/main.lua",
+            "~web/app.js",
+            "~web/index.html",
+            "~web/style.css"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_repairkit": {
         "version": "1.0.0"
     },
