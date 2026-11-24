@@ -363,6 +363,14 @@
     "filo_tricy": {
         "version": "1.0.0"
     },
+    "filo_tv": {
+        "version": "1.0.1",
+        "description": "- Fix FXServer crashing when a player seeks or leaves while a YouTube video is streaming, by serving videos in 2 MB ranges",
+        "changedFiles": [
+            "~fxmanifest.lua",
+            "~server/sv-ytdlp.js"
+        ]
+    },
     "filo_ui": {
         "version": "2.4.0",
         "description": "- Add the player's mugshot to the quick menu header\n- Add profile artwork to the quick menu player card: PNGs in `web/profile/`, per job or a default (`Config.QuickMenu.profileArt`)\n- Change the Keybinds tile to grey out when `filo_keybinds` isn't running, and to open it through its `open` export\n- Change the NUI to a Svelte build (no change in look or behaviour)\n- Remove the blur behind the HUD panels and the HUD editor",
