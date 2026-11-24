@@ -31,16 +31,21 @@
         ]
     },
     "filo_bolt": {
-        "version": "1.0.4",
-        "description": "- Fix `canCancel = false` being ignored, so the minigame could always be cancelled\n- Fix bolts spawning on the inner side of right-hand wheels\n- Fix the player staying frozen and invisible if the resource stops mid-minigame\n- Fix the minigame not ending when the vehicle is deleted or moves away, or the player dies\n- Fix the `Start` export returning `nil` instead of `false` when it can't start\n- Fix the ratchet sound cutting off and reloading on every bolt",
+        "version": "1.1.0",
+        "description": "- Add real tools on the nuts: impact gun (hold left click), torque wrench with a ratchet and tire iron (grab a nut and circle the mouse), set with `Config.Tools` and the export's new `tool` option\n- Add a streamed `filo_tireiron` prop\n- Add nut resistance: seized nuts are hard to crack loose and tightening nuts get stiff as they seat (`resistance` per tool)\n- Change tool sounds to play through NUI with `Config.Volume`, replacing the audio bank\n- Fix nuts spawning inside the wheel on vehicles with mirrored wheel bones\n- Remove `Config.OneAtATime` and the debug test target",
         "paid": true,
         "changedFiles": [
+            "+client/cl-tool.lua",
+            "+stream/filo_tireiron.ydr",
+            "+stream/filo_tireiron.ytyp",
+            "+web/ (entire folder)",
             "~client/cl-bolt.lua",
-            "~client/cl-camera.lua",
-            "~client/cl-init.lua",
             "~client/cl-main.lua",
             "~client/cl-sound.lua",
-            "~fxmanifest.lua"
+            "~fxmanifest.lua",
+            "~shared/sh-config.lua",
+            "-audiodirectory/filo_bolt_sounds.awc",
+            "-data/filo_bolt_data_sounds.dat54.rel"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
