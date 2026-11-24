@@ -15,8 +15,8 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.7.3",
-        "description": "- Fix hair fades stacking up while browsing them in the barber when `Config.TattooScript = '0r'`\n- Fix the hair fade disappearing after saving when the tattoo script re-applies its tattoos",
+        "version": "1.7.4",
+        "description": "- Fix the hair fade disappearing whenever any tattoo script re-applies tattoos, not only right after a refresh or with `Config.TattooScript` set",
         "changedFiles": [
             "~client/appearance.lua",
             "~fxmanifest.lua"
