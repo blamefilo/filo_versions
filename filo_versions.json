@@ -424,16 +424,15 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_vehiclekeys": {
-        "version": "3.0.2",
-        "description": "- Add debug prints for keys, the ignition and the engine when `Config.Debug` is on\n- Fix the key staying in the ignition when the engine was turned off with the engine keybind, key fob or menu in easier mode, so owned cars came out of the garage with no key\n- Fix the engine keybind starting the engine with the key still in the inventory in easier mode; it now puts the key in the ignition like the ignition keybind\n- Fix the start prompt not showing after turning the engine off with the engine keybind",
+        "version": "3.1.0",
+        "description": "- Add taking the key off a dead NPC driver: trying to enter their car unlocks it and gives you the key (`Config.Carjack.DeadDriverKeys`)\n- Fix cars handed over by a carjack starting without the key in the ignition\nEvery fix or patch bumps the version in `fxmanifest.lua` and gets an entry here.",
         "paid": true,
         "changedFiles": [
+            "~client/cl-crime.lua",
             "~client/cl-main.lua",
-            "~client/cl-utils.lua",
             "~fxmanifest.lua",
-            "~server/classes/keys.lua",
-            "~server/classes/vehicles.lua",
-            "~server/sv-main.lua"
+            "~server/sv-crime.lua",
+            "~shared/sh-config.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
