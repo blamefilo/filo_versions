@@ -421,12 +421,10 @@
         ]
     },
     "filo_thanksgiving": {
-        "version": "2.1.0",
-        "description": "- Change the eating prop to a turkey leg",
+        "version": "2.1.1",
+        "description": "- Fix chairs standing too close to the table\n- Fix players sitting behind the chair instead of on the seat",
         "changedFiles": [
-            "+stream/filo_thanksgiving_leg.ydr",
-            "+stream/filo_thanksgiving_leg.ytyp",
-            "~config.lua",
+            "~client/main.lua",
             "~fxmanifest.lua"
         ]
     },
