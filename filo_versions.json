@@ -193,16 +193,30 @@
         "version": "1.0.0"
     },
     "filo_jack": {
-        "version": "2.0.1",
-        "description": "- Add an extension screw that winds out of the ram on tall and lifted vehicles, so the jack always reaches the body\n- Fix the jack standing outside the body on some vehicles; it now goes under the sill between the wheels\n- Fix the ram stopping short of the underbody on lifted vehicles",
+        "version": "2.1.0",
+        "description": "- Add a low-profile floor jack (`floor_jack` item) next to the bottle jack, set with the new `Config.Jacks` (replaces `Config.RequiredItem`, which old configs still use) and `Config.FloorJackMaxClearance` for vehicles that sit too high for it\n- Add jack placement: players pick the spot under their side of the vehicle\n- Add the `GetLiftedWheel` client export\n- Rework lifting so each jack lifts the wheel closest to it and the body tips toward it, with `Config.LiftedRatio` and `Config.FarWheelSink`\n- Rework drag pumping: grab the handle's grip and drag it, tuned with `Config.Handle` (replaces `Config.PumpStrength`)\n- Change the saddle to rise to the underbody before it lifts, and drop back down when lowered\n- Change the bottle jack models and item image\n- Change the default `Config.KeyGuide` to `sleepless` (falls back to text UI)",
         "paid": true,
         "changedFiles": [
-            "+stream/filo_jack_screw.ydr",
-            "+stream/filo_jack_screw.ytyp",
+            "+INSTALL/item images/floor_jack.png",
+            "+stream_enhanced/ (entire folder)",
+            "+stream/filo_jack_floor_arm.ydr",
+            "+stream/filo_jack_floor_base.ydr",
+            "+stream/filo_jack_floor_handle.ydr",
+            "+stream/filo_jack_floor_saddle.ydr",
+            "+stream/filo_jack_floor.ytyp",
+            "~client/cl-constants.lua",
+            "~client/cl-functions.lua",
             "~client/cl-main.lua",
+            "~client/cl-physics.lua",
             "~client/cl-props.lua",
             "~fxmanifest.lua",
-            "~shared/sh-init.lua"
+            "~INSTALL/item images/vehicle_jack.png",
+            "~INSTALL/ox_inventory.txt",
+            "~locales/en.json",
+            "~server/sv-main.lua",
+            "~shared/sh-config.lua",
+            "~shared/sh-init.lua",
+            "~stream/ (6 files)"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
