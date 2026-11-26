@@ -421,13 +421,13 @@
         ]
     },
     "filo_thanksgiving": {
-        "version": "2.0.0",
-        "description": "- **Breaking:** Replace `Config.MealDuration`, `Config.Hunger`, `Config.Thirst`, `Config.Cooldown` and `Config.Stress` with `Config.FillInterval`, `Config.HungerPerTick`, `Config.ThirstPerTick` and `Config.StressPerTick`\n- Add a looping eating animation with a prop while seated, set by `Config.EatAnim`\n- Change eating to fill hunger and thirst slowly while seated instead of all at once\n- Remove the meal cooldown",
+        "version": "2.1.0",
+        "description": "- Change the eating prop to a turkey leg",
         "changedFiles": [
-            "~client/main.lua",
+            "+stream/filo_thanksgiving_leg.ydr",
+            "+stream/filo_thanksgiving_leg.ytyp",
             "~config.lua",
-            "~fxmanifest.lua",
-            "~server/main.lua"
+            "~fxmanifest.lua"
         ]
     },
     "filo_tow": {
