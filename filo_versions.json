@@ -268,6 +268,23 @@
     "filo_personalweather": {
         "version": "1.0.0"
     },
+    "filo_plushies": {
+        "version": "2.0.0",
+        "description": "- **Breaking:** The resource is renamed from `filo_carry` to `filo_plushies`. Rename the folder, update your `ensure`, and change item exports to `client = { export = 'filo_plushies.useItem' }`\n- Add the Nailong plush (`nailong` item)\n- Change the store keybind to `filo_plushies_store`, so players who changed the store key have to rebind it",
+        "changedFiles": [
+            "+stream/ (entire folder)",
+            "~client/cl_main.lua",
+            "~client/cl_selector.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~server/sv-version.lua",
+            "~web/index.html",
+            "-stream/[plush]/ella_plush_sit.ydr",
+            "-stream/[plush]/ella_plush.ydr",
+            "-stream/[plush]/ella_plush+hidr.ytd",
+            "-stream/[plush]/plush.ytyp"
+        ]
+    },
     "filo_police": {
         "version": "1.5.0",
         "description": "- Rework the creator's interface in Svelte, built and minified with Vite\n- Remove the background blur behind the creator, which cost frames",
