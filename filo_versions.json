@@ -15,10 +15,11 @@
         "version": "1.0.0"
     },
     "filo_appearance": {
-        "version": "1.7.4",
-        "description": "- Fix the hair fade disappearing whenever any tattoo script re-applies tattoos, not only right after a refresh or with `Config.TattooScript` set",
+        "version": "1.7.5",
+        "description": "- Fix other players not seeing your hair fade when a tattoo script redraws tattoos on remote players (0r-tattoo_designer does)\n- Fix hair fades stacking up while browsing them in the barber\n- Fix tattoo scripts using the illenium-appearance provider not re-applying their tattoos after the menu closes",
         "changedFiles": [
             "~client/appearance.lua",
+            "~client/menu.lua",
             "~fxmanifest.lua"
         ]
     },
