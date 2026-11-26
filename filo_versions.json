@@ -196,6 +196,18 @@
     "filo_interactions": {
         "version": "1.0.0"
     },
+    "filo_itemdrops": {
+        "version": "1.0.1",
+        "description": "- Change the `Config.WeaponRotation` default to `{ pitch = 90.0, roll = 0.0 }`\n- Fix dropped weapons standing upright and clipping into the ground; they now lie flat on their side",
+        "paid": true,
+        "changedFiles": [
+            "~client/drops.lua",
+            "~config.lua",
+            "~fxmanifest.lua",
+            "~INTEGRATION.md"
+        ],
+        "download": "https://portal.cfx.re/assets/granted-assets"
+    },
     "filo_jack": {
         "version": "2.1.1",
         "description": "- Fix the portal package being rejected by leaving the gen9 models out of it",
