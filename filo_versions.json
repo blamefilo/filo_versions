@@ -32,25 +32,14 @@
         ]
     },
     "filo_bolt": {
-        "version": "1.2.1",
-        "description": "- Fix the portal package being rejected by leaving the gen9 models out of it",
+        "version": "1.3.0",
+        "description": "- Add a `hubOffset` option to the `Start` export, which puts the camera and lug nuts on the hub of a broken-off wheel",
         "paid": true,
         "changedFiles": [
-            "+stream_enhanced/bolt_01.ydr",
-            "+stream_enhanced/filo_bolt.ytyp",
-            "+stream_enhanced/filo_lugwrench.ydr",
-            "+stream_enhanced/filo_lugwrench.ytyp",
-            "+stream/filo_lugwrench.ydr",
-            "+stream/filo_lugwrench.ytyp",
-            "~.gitattributes",
+            "~client/cl-bolt.lua",
+            "~client/cl-camera.lua",
             "~client/cl-main.lua",
-            "~client/cl-tool.lua",
-            "~fxmanifest.lua",
-            "~shared/sh-config.lua",
-            "~stream/bolt_01.ydr",
-            "~stream/filo_bolt.ytyp",
-            "-stream/filo_tireiron.ydr",
-            "-stream/filo_tireiron.ytyp"
+            "~fxmanifest.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
