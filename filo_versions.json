@@ -463,15 +463,13 @@
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
     "filo_vehiclekeys": {
-        "version": "3.1.0",
-        "description": "- Add taking the key off a dead NPC driver: trying to enter their car unlocks it and gives you the key (`Config.Carjack.DeadDriverKeys`)\n- Fix cars handed over by a carjack starting without the key in the ignition\nEvery fix or patch bumps the version in `fxmanifest.lua` and gets an entry here.",
+        "version": "3.1.1",
+        "description": "- Fix \"Tried to access invalid entity\" console errors when ambient traffic despawns right after spawning",
         "paid": true,
         "changedFiles": [
-            "~client/cl-crime.lua",
-            "~client/cl-main.lua",
             "~fxmanifest.lua",
-            "~server/sv-crime.lua",
-            "~shared/sh-config.lua"
+            "~server/classes/keys.lua",
+            "~server/sv-worldlocks.lua"
         ],
         "download": "https://portal.cfx.re/assets/granted-assets"
     },
